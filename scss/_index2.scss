@@ -1,0 +1,130 @@
+.index2{
+  .banner{
+    padding-right: 5px;
+    padding-left: 5px;
+    border: 1px solid #6195F0;
+    background: #6195F0;
+    height: 100px;
+    align-items: center;
+    > div {
+      width: 40%;
+      position: relative;
+      top: -10px;
+      margin-right: auto;
+      @media(max-width: 414px){
+        width: 65%;
+        top: -10px;
+      }
+    }
+    > img{
+      height: 100%;
+      width: auto;
+    }
+    > div > img{
+      width: 100%;
+      @media (max-width: 414px){
+        width: 90%;
+        height: 100%;
+      }
+    }
+    > div p{
+      position: absolute;
+      transform: translate(10px, 0px);
+      @media (max-width: 414px){
+        transform: translate(10px, 0px);
+      }
+    }
+    p{
+      color: #fff;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    @media (max-width: 414px){
+      p{
+        font-size: 22px;
+      }
+    }
+    .backhome{
+      font-size: 24px;
+    }
+    @media (max-width: 414px){
+      .backhome{
+        font-size: 16px;
+      }
+    }
+    span{
+      margin-left: auto;
+      padding-right: 5px;
+    }
+    @media (max-width: 414px){
+      span{
+        padding-right: 0px;
+        width: 40%;
+        text-align: right;
+      }
+    }
+  }
+  .banner-inner{
+    height: 160px;
+    display: flex;
+    align-items: center;
+    border: 2px solid #097DB1;
+    ul{
+      width: 100%;
+      justify-content: space-around;
+    }
+    li{
+      border: 2px solid #523500;
+      border-radius: 10px;
+      width: 12%;
+      height: 68px;
+      p{
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      p:first-child{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+      p:last-child{
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+    }
+  
+    li.refresh{
+      width: 28px;
+      border-radius: 7px;
+      background: #C5543F;
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+  .banner-inner-title{
+    margin-right: auto;
+    font-size: 18px;
+    width: 20%;
+    line-height: 22px;
+    @media (max-width: 800px){
+      width: 22%;
+      font-size: 16px;
+    }
+    @media (max-width: 414px){
+      font-size: 13px;
+    }
+  }
+  .content-box .content-inner li{
+    border: none;
+    &:last-child{
+      margin-bottom: 20px;
+    }
+  }
+
+  #area4 img{
+    width: 97%;
+    margin: 0 auto 20px auto;
+  }
+}
